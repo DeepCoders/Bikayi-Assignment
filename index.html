@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch JSON from API</title>
+</head>
+<body>
+    <h1>Prize Winners List</h1>
+    <div class="container">
+        <table id="emp-table">
+            <thead>
+                <tr>
+                    <th col-index = 1>Full name</th>
+                    <th col-index = 2>Category
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+        
+                    <th col-index = 3>Year
+                        <select class="table-filter" onchange="filter_rows()">
+                            <option value="all"></option>
+                        </select>
+                    </th>
+                </thead>
+                </tr>
+            <tbody id="data"> </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
