@@ -1,5 +1,5 @@
 async function getPrizes() {
-    fetch('http://api.nobelprize.org/v1/prize.json')    
+    fetch('https://api.nobelprize.org/v1/prize.json')    
     .then( (apidata) => {
         return apidata.json();
     } )
